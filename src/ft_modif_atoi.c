@@ -6,7 +6,7 @@
 /*   By: rkhelif <rkhelif@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 15:54:08 by rkhelif           #+#    #+#             */
-/*   Updated: 2020/12/02 17:13:54 by rkhelif          ###   ########.fr       */
+/*   Updated: 2021/02/16 23:24:09 by rkhelif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	ft_modif_atoi(char *str)
 	{
 		num *= 10;
 		num += (str[i] - 48);
+		if (num * 10 > 2147483647)
+			return (num);
 	}
 	return (num);
 }

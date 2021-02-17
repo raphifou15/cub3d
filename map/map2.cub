@@ -1,0 +1,16 @@
+R 500 500
+
+NO ./texture/north.xpm
+SO ./texture/south.xpm
+WE ./texture/west.xpm
+EA ./texture/east.xpm
+
+S ./texture/sprite.xpm
+
+F 119,232,106
+C 116,217,222
+
+
+111
+1N1
+111

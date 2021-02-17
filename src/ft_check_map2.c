@@ -6,7 +6,7 @@
 /*   By: rkhelif <rkhelif@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/08 16:48:32 by rkhelif           #+#    #+#             */
-/*   Updated: 2020/12/08 17:20:48 by rkhelif          ###   ########.fr       */
+/*   Updated: 2020/12/26 20:44:50 by rkhelif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,10 @@ int	ft_check_map2(char **tab)
 			return (1);
 	while (tab[++count + 1] != NULL)
 		if (ft_check_map_strcmp(tab[count - 1], tab[count]) == 1)
+			return (1);
+	count = 0;
+	while (tab[++count + 1] != NULL)
+		if (ft_check_map_strcmp(tab[count], tab[count - 1]) == 1)
 			return (1);
 	i = -1;
 	while (tab[count][++i])

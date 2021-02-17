@@ -6,7 +6,7 @@
 /*   By: rkhelif <rkhelif@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 23:48:00 by rkhelif           #+#    #+#             */
-/*   Updated: 2020/12/08 16:56:23 by rkhelif          ###   ########.fr       */
+/*   Updated: 2021/02/16 11:07:11 by rkhelif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_error4(int err)
 	if (err == 40)
 		ft_putstr("Error\nMauvaise valeur dans la carte\n");
 	if (err == 41)
-		ft_putstr("Error\nLa ligne d'une map ne doit pas finnir par 1\n");
+		ft_putstr("Error\nLa ligne d'une map doit finnir par 1\n");
 	if (err == 42)
 		ft_putstr("Error\nLa map peut seulement contennir 0 1 2 S N W E\n");
 	if (err == 43)

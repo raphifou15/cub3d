@@ -6,7 +6,7 @@
 /*   By: rkhelif <rkhelif@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/29 14:18:39 by rkhelif           #+#    #+#             */
-/*   Updated: 2020/12/08 17:32:32 by rkhelif          ###   ########.fr       */
+/*   Updated: 2021/02/14 17:13:48 by rkhelif          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,8 @@ int	main(int argc, char **argv)
 		return (0);
 	if (ft_check_map_and_recup(map, argv[1]) == 1 && ft_check_malloc(map) == 0)
 		return (0);
-	printf("%d %d\n%s\n", map->res_x, map->res_y, map->north_text);
-	printf("%s\n%s\n", map->south_text, map->west_text);
-	printf("%s\n%s\n", map->east_text, map->sprite_text);
-	printf("%d\n%d\n%s", map->f_color, map->c_color, map->first_map);
-	printf("salut à tous\n");
-	while (map->map[++i])
-		printf("%s\n", map->map[i]);
-	printf("%d\n", map->line_map);
+	map->argc = argc;
+	ft_cub3d(map);
 	ft_check_malloc(map);
 	return (0);
 }
